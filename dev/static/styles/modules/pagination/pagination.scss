@@ -1,0 +1,27 @@
+.pagination__list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__link {
+  align-items: center;
+  color: $text-gray-color;
+  display: flex;
+  justify-content: center;
+  height: 26px;
+  text-decoration: none;
+  transition: all ease-out 0.15s;
+  width: 26px;
+
+  &[href]:hover {
+    opacity: 0.7;
+  }
+
+  &--active {
+    border: 2px solid $yellow-color;
+    border-radius: 2px;
+    color: $text-color;
+    cursor: default;
+  }
+}

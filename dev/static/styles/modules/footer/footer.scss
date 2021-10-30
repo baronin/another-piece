@@ -1,0 +1,17 @@
+.footer {
+  background-color: $text-color;
+  flex: 0 0 auto;
+}
+
+.footer__nav {
+  padding: 42px 0 37px;
+}
+
+.footer__copyright {
+  background-color: $light-black-color;
+  color: $light-grey-color;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 13px 0;
+  text-align: center;
+}

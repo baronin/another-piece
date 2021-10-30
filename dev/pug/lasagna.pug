@@ -1,0 +1,14 @@
+extends /dev/pug/layout/main
+
+block variables
+  - var title = "Рецепт приготовления лазаньи";
+  - var pageClass = "recipe-page";
+  - var userLogin = true;
+
+block content
+  main(class=pageClass)
+    include /dev/pug/pages/recipe/recipe-data
+    include /dev/pug/pages/recipe/heading
+    include /dev/pug/pages/recipe/ingredients
+    include /dev/pug/pages/recipe/steps
+    include /dev/pug/pages/recipe/ready

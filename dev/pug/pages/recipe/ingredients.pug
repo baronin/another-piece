@@ -1,0 +1,15 @@
+section.recipe-ingredients
+  .container
+    h2.recipe-ingredients__title.section__title Ингредиенты
+    .recipe-ingredients__wrapper
+      each components, name in recipe.composition
+        .recipe-ingredients__inner
+          .recipe-ingredients__box
+            h3.recipe-ingredients__name= name
+            ul.recipe-ingredients__list
+              each ingredient in components
+                li.recipe-ingredients__item
+                  span.recipe-ingredients__component= ingredient.component
+                  span.recipe-ingredients__line
+                  span.recipe-ingredients__count= ingredient.count
+

@@ -1,0 +1,34 @@
+.advantages {
+  margin: 47px 0 98px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -20px 0;
+}
+
+.advantages__item {
+  flex: 0 0 33.33%;
+  padding: 20px 20px 0;
+}
+
+.advantages__inner {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  padding: 14px 140px 14px 14px;
+  position: relative;
+}
+
+.advantages__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 0 25px 0;
+}
+
+.advantages__img {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}

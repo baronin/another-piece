@@ -1,0 +1,8 @@
+section.all-recipes
+  .container
+    h2.all-recipes__title.section__title Все рецепты
+    .all-recipes__wrapper
+      include /dev/pug/modules/all-recipes/recipes-catalog
+      include /dev/pug/modules/all-recipes/recipes-filter
+    .all-recipes__pagination.pagination
+      +pagination(4,1,arrows)

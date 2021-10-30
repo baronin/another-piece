@@ -1,0 +1,12 @@
+extends /dev/pug/layout/main
+
+block variables
+  - var title = "Каталог рецептов"
+  - var pageClass = "catalog-page"
+  - var userLogin = false
+
+block content
+  main(class=pageClass)
+    include /dev/pug/modules/hero/hero
+    include /dev/pug/modules/best-recipes/best-recipes
+    include /dev/pug/modules/all-recipes/all-recipes

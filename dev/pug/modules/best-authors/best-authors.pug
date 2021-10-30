@@ -1,0 +1,12 @@
+include /dev/pug/modules/best-authors/best-author-data
+section.best-authors
+  .container
+    h2.best-authors__title.section__title Лучшие авторы
+    ul.best-authors__list
+      each author in authors
+        li.best-authors__item
+          .best-authors__inner
+            img.best-authors__img(src= author.photo alt="Фото автора рецептов" width="100" height="100")
+            .best-authors__box
+              h3.best-authors__name= author.name
+              p.best-authors__recipes-count Опубликовано #[a.best-authors__link(href="#") #{author.recipesCount} рецептов] за месяц

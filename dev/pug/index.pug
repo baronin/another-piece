@@ -1,0 +1,14 @@
+extends /dev/pug/layout/main
+
+block variables
+  - var title = "Главная страница"
+  - var pageClass = "index-page"
+  - var userLogin = false
+
+block content
+  main(class=pageClass)
+    include /dev/pug/modules/hero/hero
+    include /dev/pug/modules/advantages/advantages
+    include /dev/pug/modules/popular-recipes/popular-recipes
+    include /dev/pug/modules/best-authors/best-authors
+    include /dev/pug/modules/articles/articles

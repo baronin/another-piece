@@ -1,0 +1,178 @@
+.recipes-filter {
+  flex: 0 0 15.6%;
+  padding-top: 5px;
+}
+
+.recipes-filter__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipes-filter__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &:not(:last-child) {
+    margin: 0 0 22px 0;
+  }
+}
+
+.recipes-filter__legend {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+
+.recipes-filter__box {
+  display: flex;
+
+  &:not(:last-child) {
+    margin: 0 0 4px 0;
+  }
+
+  &--input {
+    &:not(:last-child) {
+      margin: 0;
+    }
+  }
+}
+
+.recipes-filter__inner {
+  align-items: center;
+  display: flex;
+}
+
+.recipes-filter__input {
+  border: 2px solid $text-gray-color;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 13px;
+  padding: 3px 0 3px 8px;
+  width: 55px;
+}
+
+.recipes-filter__line {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.recipes-filter__checkbox {
+  appearance: none;
+  position: absolute;
+  left: -9999px;
+
+  + label {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    position: relative;
+    padding-left: 22px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  + label::before {
+    background-color: transparent;
+    border: 2px solid $text-gray-color;
+    border-radius: 2px;
+    content: "";
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: calc(50% - 8px);
+    width: 16px;
+  }
+
+  &:focus-visible + label::before {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  }
+
+  &:checked + label::before {
+    background-color: transparent;
+    border-color: $yellow-color;
+  }
+
+  &:checked + label::after,
+  &:not(:checked) + label::after {
+    border-radius: 1px;
+    border-left: 1.5px solid $black;
+    border-bottom: 1.5px solid $black;
+    content: "";
+    left: 4px;
+    height: 5px;
+    position: absolute;
+    top: calc(50% - 7px + 3px);
+    transition: all ease-out 0.15s;
+    transform: rotate(-45deg);
+    width: 8px;
+  }
+
+  &:not(:checked) + label::after {
+    opacity: 0;
+  }
+
+  &:checked + label::after {
+    opacity: 1;
+  }
+}
+
+.recipes-filter__radio {
+  appearance: none;
+  position: absolute;
+  left: -9999px;
+
+  + label {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 24px;
+    position: relative;
+  }
+
+  + label::before {
+    background-color: transparent;
+    border: 2px solid $text-gray-color;
+    border-radius: 50%;
+    content: "";
+    height: 16px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+  }
+
+  &:focus-visible + label::before {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  }
+
+  &:checked + label::before {
+    border: 2px solid $yellow-color;
+  }
+
+  &:checked + label::after,
+  &:not(:checked) + label::after {
+    background-color: $yellow-color;
+    border-radius: 50%;
+    content: "";
+    left: 4px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease-out 0.15s;
+    width: 8px;
+  }
+
+  &:not(:checked) + label::after {
+    opacity: 0;
+  }
+
+  &:checked + label::after {
+    opacity: 1;
+  }
+}

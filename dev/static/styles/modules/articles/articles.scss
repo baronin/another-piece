@@ -1,0 +1,82 @@
+.articles {
+  margin: 0 0 87px 0;
+}
+
+.articles__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -20px 40px;
+}
+
+.articles__item {
+  display: flex;
+  flex: 0 0 33.33%;
+  padding: 20px 20px 0;
+}
+
+.articles__link {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.articles__img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.articles__date {
+  background-color: $yellow-color;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 13px;
+  left: 8px;
+  padding: 2px 6px;
+  position: absolute;
+  top: 8px;
+}
+
+.articles__name {
+  background-color: $white;
+  border-radius: 8px;
+  bottom: 8px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  left: 8px;
+  padding: 7px 40px 7px 10px;
+  position: absolute;
+  width: 90%;
+}
+
+.articles__icon {
+  position: absolute;
+  right: 17px;
+  top: 14px;
+}
+
+.articles__bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.articles__more {
+  background-color: $yellow-color;
+  border-radius: 4px;
+  color: $text-color;
+  display: inline-block;
+  padding: 5px 12px;
+  text-decoration: none;
+  transition: all ease-out 0.15s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,13 @@
+mixin advantages(name, text, icon)
+  li.advantages__item
+    .advantages__inner
+      h3.advantages__title= name
+      p.advantages__text= text
+      img.advantages__img(src= icon alt="Иконка преимущества" width="125" height="127")
+
+section.advantages
+  .container
+    ul.advantages__list
+      +advantages("Быстро", "На сайте вы можете быстро найти вкусные рецепты", "static/images/common/icon-clock.svg")
+      +advantages("Просто", "Все рецепты создаются обычными пользователями", "static/images/common/icon-star.svg")
+      +advantages("Дешево", "На рецепты не придется тратить много денег", "static/images/common/icon-basket.svg")

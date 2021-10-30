@@ -1,0 +1,10 @@
+section.recipe-steps
+  .container
+    h2.recipe-steps__title.section__title Рецепт
+    ul.recipe-steps__list
+      each step, count in recipe.steps
+        li.recipe-steps__item
+          .recipe-steps__box
+            span.recipe-steps__count= `${count + 1}`
+            p.recipe-steps__text= step
+

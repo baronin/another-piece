@@ -1,0 +1,25 @@
+- var pathContentImg = 'static/images/content/';
+- var pathCommonImg = 'static/images/common/';
+
+section.hero
+  .hero__content
+    .container
+      .hero__body
+        if pageClass === "index-page"
+          h1.hero__title Самые #[span.text-line вкусные], быстрые, простые
+        else if pageClass === "catalog-page"
+          h1.hero__title #[span.text-line Каталог рецептов]
+        p.hero__description На нашем сайте собрано около 50 000 рецептов. И это не просто огромный массив кулинарных рецептур, а проверенные на домашних кухнях любимые блюда наших пользователей.
+        if pageClass === "index-page"
+          a.hero__button(href="#") Популярные рецепты
+        .hero__pointer
+          img.hero__pointer-arrow(src=pathCommonImg + "icon-arrow.png" alt="Стрелка указывающая на блюдо" width="192" height="46")
+          if pageClass === "index-page"
+            p.hero__pointer-text Тост с яйцом и сыром #[br] (на завтрак)
+          else if pageClass === "catalog-page"
+            p.hero__pointer-text Салат с тунцом #[br] (на обед)
+  .hero__image
+    if pageClass === "index-page"
+      img.hero__img(src=pathContentImg + "hero-index@1x.png" srcset=pathContentImg + "hero-index@2x.png 2x" width="660" height="670" alt="Изображение яичницы")
+    else if pageClass === "catalog-page"
+      img.hero__img(src=pathContentImg + "hero-catalog@1x.png" srcset=pathContentImg + "hero-catalog@2x.png 2x" width="660" height="670" alt="Изображение салата")

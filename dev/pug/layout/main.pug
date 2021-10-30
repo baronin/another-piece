@@ -1,0 +1,16 @@
+include /dev/pug/helpers/mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="utf-8")
+    title #{title}
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(name="keywords" content="")
+    link(rel="stylesheet" type="text/css" href="static/css/styles.css")
+  body
+    .wrapper
+      include /dev/pug/modules/header/header
+      block content
+      include /dev/pug/modules/footer/footer

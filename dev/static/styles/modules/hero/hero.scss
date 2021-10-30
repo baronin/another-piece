@@ -1,0 +1,79 @@
+.hero {
+  display: flex;
+}
+
+.hero__content {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.hero__body {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 600px;
+  width: 50%;
+}
+
+.hero__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 71px;
+  margin: 0 0 20px 0;
+}
+
+.hero__description {
+  margin: 0 0 40px 0;
+  width: 65%;
+}
+
+.hero__button {
+  background-color: $yellow-color;
+  box-shadow: 0 4px 20px rgba(255, 216, 78, 0.5);
+  border-radius: 4px;
+  color: $text-color;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px 14px;
+  text-decoration: none;
+  transition: all ease-out 0.15s;
+
+  &:hover {
+    background-color: $yellow-light-color;
+  }
+}
+
+.hero__pointer {
+  position: absolute;
+  left: 41.5%;
+  top: 81.5%;
+  width: 150px;
+}
+
+.hero__pointer-arrow {
+  height: 125px;
+  position: absolute;
+  right: -60px;
+  top: -145px;
+  width: auto;
+}
+
+.hero__pointer-text {
+  font-family: $decor-font;
+  font-size: 20px;
+  line-height: 24px;
+  transform: matrix(1, 0.06, -0.06, 1, 0, 0);
+}
+
+.hero__image {
+  position: absolute;
+  right: 0;
+  top: -70px;
+  z-index: -1;
+}
+
+.hero__img {
+  filter: drop-shadow(30px 35px 25px rgba(0, 0, 0, 0.07));
+}

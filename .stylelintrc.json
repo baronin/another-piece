@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-prettier"
+  ],
+  "extends": [
+    "stylelint-config-htmlacademy"
+  ]
+}

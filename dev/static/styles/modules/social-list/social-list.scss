@@ -1,0 +1,29 @@
+.social-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
+}
+
+.social-list__item {
+  &:not(:last-child) {
+    margin: 0 10px 0 0;
+  }
+}
+
+.social-list__link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+}
+
+.social-list__link:hover .social-list__icon {
+  fill: $yellow-light-color;
+}
+
+.social-list__icon {
+  fill: $white;
+  transition: fill ease-out 0.15s;
+}

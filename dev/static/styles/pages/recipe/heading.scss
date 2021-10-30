@@ -1,0 +1,107 @@
+.recipe-heading {
+  margin: 40px 0 93px;
+}
+
+.recipe-heading__wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-heading__box {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 40%;
+}
+
+.recipe-heading__info-list {
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 8px 0;
+  max-width: 500px;
+  padding: 7px 12px 7px 10px;
+}
+
+.recipe-heading__info-item {
+  align-items: center;
+  display: flex;
+
+  &:not(:last-child) {
+    margin: 0 12px 0 0;
+  }
+}
+
+.recipe-heading__info-icon {
+  fill: $yellow-color;
+}
+
+.recipe-heading__info-text {
+  color: $black;
+  font-size: 12px;
+  line-height: 13px;
+  margin: 0 0 0 5px;
+}
+
+.recipe-heading__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 71px;
+  margin: 0 0 40px 0;
+}
+
+.recipe-heading__preview {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  flex: 0 0 48.4%;
+  overflow: hidden;
+  max-height: 424px;
+  position: relative;
+}
+
+.recipe-heading__img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.recipe-heading__author {
+  align-items: center;
+  background-color: $white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  bottom: 6px;
+  display: flex;
+  left: 6px;
+  padding: 12px 22px 12px 12px;
+  position: absolute;
+  z-index: 1;
+}
+
+.recipe-heading__author-img {
+  height: 80px;
+  object-fit: cover;
+  margin: 0 14px 0 0;
+  width: 80px;
+}
+
+.recipe-heading__author-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-heading__author-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 0 2px 0;
+}
+
+.recipe-heading__author-date {
+  color: $text-gray-color;
+  line-height: 23px;
+}
+

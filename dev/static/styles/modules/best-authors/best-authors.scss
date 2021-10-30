@@ -1,0 +1,57 @@
+.best-authors {
+  margin: 0 0 95px 0;
+}
+
+.best-authors__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px -20px 0;
+}
+
+.best-authors__item {
+  display: flex;
+  flex: 0 0 33.33%;
+  padding: 20px 20px 0;
+}
+
+.best-authors__inner {
+  align-items: center;
+  background: $white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  padding: 12px 22px 12px 12px;
+}
+
+.best-authors__img {
+  height: 100px;
+  object-fit: cover;
+  width: 100px;
+}
+
+.best-authors__box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 20px;
+}
+
+.best-authors__name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0 0 4px 0;
+}
+
+.best-authors__recipes-count {
+  color: $text-gray-color;
+}
+
+.best-authors__link {
+  color: $yellow-color;
+  text-decoration: none;
+  transition: all ease-out 0.15s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
