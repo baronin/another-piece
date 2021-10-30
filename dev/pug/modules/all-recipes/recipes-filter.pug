@@ -1,3 +1,5 @@
+include ../../components/field-group/field-group
+
 mixin input(type,id,name,checked)
   .recipes-filter__box
     if type === "checkbox"
@@ -15,6 +17,7 @@ mixin input(type,id,name,checked)
   form.recipes-filter__form
     fieldset.recipes-filter__fieldset
       legend.recipes-filter__legend Прием пищи
+      +field-group("checkbox", "exmapleID", "exmapleName").recipes-filter__box exmaple
       +input("checkbox", "eatingBreakfast", "Завтрак")
       +input("checkbox", "eatingLunch", "Обед", true)
       +input("checkbox", "eatingDinner", "Ужин")

@@ -1,0 +1,5 @@
+mixin field-group(type = "text", id, name, checked)
+  .field-group&attributes(attributes)
+    input.field-groupr__input.recipes-filter__checkbox(type=type, id=id, name=id, value= name, checked=checked)
+    label.field-group__label.recipes-filter__label(for=id)
+      block
