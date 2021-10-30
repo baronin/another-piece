@@ -1,3 +1,5 @@
+include ../../components/button/button
+
 nav.nav(class=!itFooter ? false : "nav--footer")
   a.nav__logo-link(href=pageClass === "index-page" ? false : "index.html")
     span.visually-hidden Логотип сайта "Ещё кусочек"
@@ -32,11 +34,11 @@ nav.nav(class=!itFooter ? false : "nav--footer")
         </svg>
   ul.nav__list
     li.nav__item
-      a.nav__link(class=pageClass !== "index-page" ? false : "nav__link--active" href=pageClass === "index-page" ? false : "index.html") Главная
+      +button('a')(class=pageClass !== "index-page" ? false : "nav__link--active" href=pageClass === "index-page" ? false : "index.html").nav__link Главная
     li.nav__item
-      a.nav__link(class=pageClass !== "catalog-page" ? false : "nav__link--active" href=pageClass === "catalog-page" ? false : "catalog.html") Каталог рецептов
+      +button('a')(class=pageClass !== "catalog-page" ? false : "nav__link--active" href=pageClass === "catalog-page" ? false : "catalog.html").nav__link Каталог рецептов
     li.nav__item
-      a.nav__link(class=pageClass !== "articles-page" ? false : "nav__link--active" href=pageClass === "articles-page" ? false : "#") Статьи
+      +button('a')(class=pageClass !== "articles-page" ? false : "nav__link--active" href=pageClass === "articles-page" ? false : "#").nav__link Статьи
   if itFooter
     include /dev/pug/modules/social-list/social-list
   else
